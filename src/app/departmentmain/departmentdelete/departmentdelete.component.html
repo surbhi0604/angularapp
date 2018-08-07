@@ -1,0 +1,13 @@
+
+
+
+<h2 class="modal-title" id="exampleModalLongTitle">Delete User</h2>
+      
+      
+<h4>
+  <span>Department ID</span>
+</h4>
+<input type="text" InputText placeholder="Begins with" [(ngModel)]="model.deptId">
+
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<button type="button" (click)="deleteDepartment()" routerLink="/departmentlist" data-dismiss="modal" class="btn btn-primary">Delete User</button>

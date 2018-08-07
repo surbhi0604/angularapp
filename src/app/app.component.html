@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <h1>
+    <title>Welcome to first-app!</title>
+  </h1>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="clearfix">
+      <nav>
+          
+        <h2 class="text-muted header">Employee manager</h2>
+       
+        <ul class="nav nav-pills float-right">
+
+            <li class="nav-item">
+                <!-- <button type="button" data-toggle="modal" data-target="#addModalLong" class="">Add</button> -->
+               
+                <a id="click"   class="nav-link active" routerLink="/employeelist" >Employee</a>
+               </li>
+
+               <li> &nbsp; &nbsp; </li>
+          
+          <li class="nav-item">
+            <!-- <button type="button" data-toggle="modal" data-target="#addModalLong" class="">Add</button> -->
+            <a id="click"  class="nav-link active" routerLink="/departmentlist" >Department</a>
+           </li>
+ 
+
+        </ul>
+      </nav>
+      <router-outlet></router-outlet>
+      
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+
+<h4>
+  Department Table</h4>
+<div class="listContainer">
+    
+        <li class="nav-item">
+         <!-- <button type="button" data-toggle="modal" data-target="#addModalLong" class="">Add</button> -->
+         <a id="click" routerLink="/departmentadd" >Department Add</a>
+        </li>
+  
+        <li class="nav-item">
+          <a id="click" routerLink="/departmentdelete" >Department Delete</a>
+        </li>
+  
+  
+        <li class="nav-item">
+          <a id="click" routerLink="/departmentupdate" >Department Update</a>
+        </li>
+       
+        
+  <table>
+    <tr>
+      <th *ngFor="let col of columns">{{col.header}}</th>
+    </tr>
+    <tr *ngFor="let department of departmentList">
+      <td *ngFor="let col of columns">
+        {{department[col.field]}}
+      </td>
+    </tr>
+  </table>
+</div>
+
+  
+
+
